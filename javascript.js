@@ -27,7 +27,7 @@ const keys = document.querySelectorAll(".key");
 keys.forEach((key) => {
   key.addEventListener("transitionend", removeTransition);
   key.addEventListener("click", playClick);
-  key.addEventListener("touchstart", playClick);
+  key.addEventListener("touchstart", playClick, { passive: true });
 });
 
 window.addEventListener("keydown", playKey);
