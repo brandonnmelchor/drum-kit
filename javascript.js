@@ -25,10 +25,10 @@ function removeTransition(event) {
 }
 
 const keys = document.querySelectorAll(".key");
-keys.forEach((key) => {
+keys.forEach(function (key) {
   key.addEventListener("transitionend", removeTransition);
-  key.addEventListener("click", playClick);
-  key.addEventListener("touchstart", playClick);
 });
 
-window.addEventListener("keydown", playKey);
+document.addEventListener("click", playClick);
+document.addEventListener("touchstart", playClick);
+document.addEventListener("keydown", playKey);
