@@ -32,3 +32,10 @@ keys.forEach(function (key) {
 document.addEventListener("click", playClick);
 document.addEventListener("touchstart", playClick, { passive: false });
 document.addEventListener("keydown", playKey);
+
+let test = document.getElementById("test");
+test.addEventListener("click", function () {
+  const audio = document.querySelector('audio[data-key="67"]');
+  const key = document.querySelector('.key[data-key="test"]');
+  playSound(audio, key);
+});
