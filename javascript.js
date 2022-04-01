@@ -32,3 +32,7 @@ keys.forEach(function (key) {
 document.addEventListener("click", playClick);
 document.addEventListener("touchstart", playClick, { passive: false });
 document.addEventListener("keydown", playKey);
+
+document.addEventListener("touchend", playClick, { passive: false });
+document.addEventListener("touchcancel", playClick, { passive: false });
+document.addEventListener("touchmove", playClick, { passive: false });
