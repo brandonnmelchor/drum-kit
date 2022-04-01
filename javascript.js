@@ -7,9 +7,9 @@ function playKey(event) {
 
 function playClick(event) {
   event.preventDefault();
+  if (event.path[1].attributes["data-key"] === undefined) return;
   const audio = document.querySelector(`audio[data-key="${event.path[1].attributes["data-key"].nodeValue}"]`);
   const key = document.querySelector(`.key[data-key="${event.path[1].attributes["data-key"].nodeValue}"]`);
-  if (!audio || !key) return;
   playSound(audio, key);
 }
 
