@@ -29,6 +29,11 @@ keys.forEach(function (key) {
   key.addEventListener("transitionend", removeTransition);
 });
 
-document.addEventListener("click", playClick);
-document.addEventListener("touchstart", playClick, { passive: false });
+document.addEventListener("click", test);
+document.addEventListener("touchstart", test, { passive: false });
 document.addEventListener("keydown", playKey);
+
+function test(event) {
+  let test = document.querySelector("h1");
+  test.textContent = event.path[1].attributes["data-key"].nodeValue;
+}
