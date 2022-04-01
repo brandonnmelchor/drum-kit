@@ -30,5 +30,5 @@ keys.forEach(function (key) {
 });
 
 document.addEventListener("click", playClick);
-document.addEventListener("touchstart", playClick);
+document.addEventListener("touchstart", playClick, { passive: false });
 document.addEventListener("keydown", playKey);
