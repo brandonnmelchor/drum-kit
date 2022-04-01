@@ -39,7 +39,12 @@ html {
   text-shadow: 0 0 .5rem black;
   border: .5rem solid black;
   border-radius: .5rem;
+  user-select: none;
   transition: all .08s ease;
+}
+
+.key:hover {
+  cursor: pointer;
 }
 
 .playing {
