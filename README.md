@@ -4,4 +4,4 @@ I created a simple Drum Kit soundboard page using vanilla HTML, CSS, and JavaScr
 
 https://brandonnmelchor.github.io/Soundboard-Drum-Kit/
 
-![](https://raw.githubusercontent.com/brandonnmelchor/Soundboard-Drum-Kit/main/screenshot.png)
+![](https://github.com/brandonnmelchor/Soundboard-Drum-Kit/blob/main/screenshot%202.png?raw=true)
