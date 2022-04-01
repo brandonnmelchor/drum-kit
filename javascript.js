@@ -22,10 +22,9 @@ function removeTransition(event) {
   this.classList.remove("playing");
 }
 
+document.addEventListener("keydown", playKey);
 const keys = document.querySelectorAll(".key");
 keys.forEach(function (key) {
-  key.addEventListener("transitionend", removeTransition);
   key.addEventListener("click", playClick);
+  key.addEventListener("transitionend", removeTransition);
 });
-
-document.addEventListener("keydown", playKey);
