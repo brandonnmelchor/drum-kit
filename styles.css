@@ -9,15 +9,30 @@
 html {
   background-image: url('./background.png');
   background-size: cover;
+  background-position: center;
   font-family: "Roboto";
   font-size: 12px;
 }
 
-.keypad {
+body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+h1 {
+  width: 100%;
+  line-height: 8rem;
+  margin-top: auto;
+  margin-bottom: 50px;
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.8);
 }
 
 .keys {
@@ -26,7 +41,7 @@ html {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  width: 500px;
+  max-width: 500px;
 }
 
 .key {
@@ -63,6 +78,16 @@ kbd {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
+}
+
+footer {
+  align-self: flex-end;
+  width: 100%;
+  margin-top: auto;
+  line-height: 3rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.8);
 }
 
 @media (max-width: 400px) {
