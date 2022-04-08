@@ -1,6 +1,6 @@
 # Soundboard-Drum-Kit
 
-I created a simple Drum Kit soundboard page using vanilla HTML, CSS, and JavaScript.
+I created a Drum Kit soundboard page using vanilla HTML, CSS, and JavaScript. Creating this helped me better understand how to manipulate the DOM using event listeners to make my page more dynamic. The page is responsive to viewport size and is functional on mobile.
 
 https://brandonnmelchor.github.io/Soundboard-Drum-Kit/
 
